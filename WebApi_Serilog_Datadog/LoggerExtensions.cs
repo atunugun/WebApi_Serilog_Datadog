@@ -19,7 +19,7 @@ namespace WebApi_Serilog_Datadog
         public static ILogger Logger<T>()
         {
             return new LoggerConfiguration().WriteTo.DatadogLogs(
-                "0d7f982529cc9294103e779de718e44d",
+                "APIKEY", //Place Your API Key
                 service: "Users",
                 source: "WebAPI",
                 host: "localhost"
